@@ -1,0 +1,26 @@
+{
+    "name": "antonowano/qiwi-topup",
+    "description": "Top-Up API is intended for merchants or payment service providers (PSP) who need to send money to QIWI Wallet users.",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^9.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan Antonov",
+            "email": "antonowano@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Tests\\Antonowano\\QiwiTopup\\": "tests/",
+            "Antonowano\\QiwiTopup\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.1",
+        "ext-simplexml": "*",
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}
