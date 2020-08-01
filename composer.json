@@ -21,6 +21,6 @@
     "require": {
         "php": ">=7.1",
         "ext-simplexml": "*",
-        "guzzlehttp/guzzle": "^7.0"
+        "guzzlehttp/guzzle": "^6.5"
     }
 }

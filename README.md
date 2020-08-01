@@ -1,5 +1,10 @@
 Example
 ===
+Install
+---
+```text
+composer require antonowano/qiwi-topup
+```
 Get balance
 ---
 ```php
