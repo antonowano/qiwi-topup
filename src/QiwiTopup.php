@@ -3,12 +3,16 @@
 namespace Antonowano\QiwiTopup;
 
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Request as HttpRequest;
 
 class QiwiTopup
 {
     private const API_URL = 'https://api.qiwi.com/xml/topup.jsp';
 
+    /**
+     * @throws GuzzleException
+     */
     public function sendRequest(Request $request): Response
     {
         $xmlBuilder = new Builder\XMLBuilder();
